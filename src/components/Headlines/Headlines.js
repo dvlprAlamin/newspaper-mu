@@ -6,7 +6,7 @@ const Headlines = ({articles}) => {
     return (
         <ul>
             {
-                articles.map(article => <li className="headline">
+                articles.map((article, id) => <li key={id} className="headline">
                     <a href={article.url}><Typography  gutterBottom variant="h6" component="h4">
                 {article.title}
             </Typography></a>

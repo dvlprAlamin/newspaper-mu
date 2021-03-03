@@ -14,7 +14,7 @@ const Articles = () => {
         <div className="all-news">
         <div className="articles">
             {
-                articles.map(article => <Article article={article}/>)
+                articles.map((article, id) => <Article key={id} article={article}/>)
             }
         </div>
         <div className="headlines">
