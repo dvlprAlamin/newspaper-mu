@@ -1,0 +1,24 @@
+.headline{
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+.headline a{
+    text-decoration: none;
+    color: rgb(32, 77, 62);
+}
+.headline a:hover{
+    text-decoration: underline;
+}
+.headline::before{
+    content: '';
+    height: 15px;
+    width: 15px;
+    background:lightseagreen;
+    position: absolute;
+    left: -20px;
+    top: 7px;
+}
+ul{
+    position: sticky;
+    top:60px;
+}

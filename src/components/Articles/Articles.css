@@ -1,0 +1,29 @@
+.articles{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    flex: 3;
+    margin: 1rem auto;
+}
+.all-news{
+    display: flex;
+}
+.headlines{
+    flex: 1;
+    margin: 1rem;
+}
+.headlines h1{
+    color: #3F51B5;
+}
+@media (max-width:1200px){
+    .articles{
+        grid-template-columns: repeat(2,1fr);
+        flex: 2;
+    }
+}
+@media (max-width:930px){
+    .articles{
+        grid-template-columns: 1fr;
+        flex: 1;
+    }
+}
